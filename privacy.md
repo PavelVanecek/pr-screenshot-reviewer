@@ -3,16 +3,32 @@ permalink: /privacy.html
 ---
 # Privacy Policy — PR Screenshot Reviewer
 
-_Last updated: 2026-09-17_
+_Last updated: 2026-09-21_
 
 PR Screenshot Reviewer ("the app") is developed by Pavel Vanecek. This policy explains what happens to your
-data when you use it. Short version: **the developer collects nothing.** The app talks only to GitHub, on
-your behalf.
+data when you use it. Short version: **the developer collects no personal data.** The app talks to GitHub on
+your behalf, and may send anonymous crash and error reports so problems can be fixed.
 
 ## What the developer collects
 
-Nothing. The app has no analytics, crash reporting, advertising, tracking or developer-run servers. No data
-is sent to the developer or to any third party other than GitHub.
+No personal data. The app has no analytics, advertising or tracking, and no account system.
+
+**Crash and error reports.** When the app crashes or hits an unexpected error, it may send a technical
+report to the developer so the problem can be identified and fixed. A report contains only technical
+information, such as:
+
+- the exception type, message and stack trace
+- app version and build number
+- Android version, device model and manufacturer
+- basic app state at the time of the error (for example, which screen was open)
+
+Reports contain no user identifiers: no name, email address, GitHub username or access token, no advertising
+ID or other persistent device identifier, and no repository names, pull request contents or screenshots. Reports
+cannot be linked to you. They are used only to diagnose and fix problems, never for advertising or profiling,
+and are not sold or shared for any other purpose. Reports are handled by a crash-reporting service acting on
+the developer's behalf, and are kept only as long as needed to fix the problem.
+
+Apart from these reports, no data is sent to the developer or to any third party other than GitHub.
 
 ## Data the app handles on your device
 
@@ -30,7 +46,7 @@ Android backup is disabled, so none of this is copied to cloud backups.
 
 ## Communication with GitHub
 
-The app connects only to `github.com`, `api.github.com` and `raw.githubusercontent.com`. Reviews and
+The app connects to `github.com`, `api.github.com` and `raw.githubusercontent.com`, and, for crash reports, to the crash-reporting service described above. Reviews and
 comments you submit are published to GitHub under your account. GitHub's handling of that data is governed
 by the [GitHub Privacy Statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).
 All connections use HTTPS.
