@@ -3,7 +3,7 @@ permalink: /privacy.html
 ---
 # Privacy Policy — PR Screenshot Reviewer
 
-_Last updated: 2026-09-21_
+_Last updated: 2026-09-24_
 
 PR Screenshot Reviewer ("the app") is developed by Pavel Vanecek. This policy explains what happens to your
 data when you use it. Short version: **the developer collects no personal data.** The app talks to GitHub on
@@ -27,8 +27,11 @@ To work, the app uses the following, and it stays on your device except when sen
   loads faster and works offline.
 - **Pending actions** (for example a review or comment written while offline), held until they are sent to
   GitHub.
+- **Feedback on individual screenshots**: the comments, rejections and tasks you write about a screenshot,
+  with a link to the resulting GitHub comment or issue once it is sent. Kept so the app can show what you
+  said about each screenshot; removed when the pull request is closed or you change repository.
 
-The GitHub username, access token and the reviews and comments you write are sent to GitHub only, to provide
+The GitHub username, access token and the reviews, comments and issues you write are sent to GitHub only, to provide
 the app's functionality. The developer never receives them, and they are not sold or shared with anyone else.
 
 Android backup is disabled, so none of this is copied to cloud backups.
@@ -36,7 +39,8 @@ Android backup is disabled, so none of this is copied to cloud backups.
 ## Communication with GitHub
 
 The app connects to `github.com`, `api.github.com` and `raw.githubusercontent.com`. Reviews and
-comments you submit are published to GitHub under your account. GitHub's handling of that data is governed
+comments you submit, and issues you create from a screenshot, are published to GitHub under your account in
+the repository you are reviewing. GitHub's handling of that data is governed
 by the [GitHub Privacy Statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).
 All connections use HTTPS.
 
