@@ -3,7 +3,7 @@ permalink: /privacy.html
 ---
 # Privacy Policy — PR Screenshot Reviewer
 
-_Last updated: 2026-09-24_
+_Last updated: 2026-10-05_
 
 PR Screenshot Reviewer ("the app") is developed by Pavel Vanecek. This policy explains what happens to your
 data when you use it. Short version: **the developer collects no personal data.** The app talks to GitHub on
@@ -22,7 +22,11 @@ To work, the app uses the following, and it stays on your device except when sen
   encrypted with the Android Keystore. Used only to call GitHub's API.
 - **GitHub username and pull request authors' usernames and avatars**, received from GitHub and shown in
   the app. Avatar images are loaded from GitHub's servers.
-- **Repository setting** you enter (owner/name) and app preferences.
+- **Repository setting** you enter or pick (owner/name), the names of the last five repositories you used,
+  and app preferences.
+- **Repository suggestions**: when you choose a repository, the app asks GitHub for public repositories you
+  contributed to or belong to, and for open pull requests awaiting your review, so it can offer them for
+  one-tap selection. They are only shown, not stored.
 - **Cached GitHub content**: pull request metadata, changed image files and HTTP cache tags, so the app
   loads faster and works offline.
 - **Pending actions** (for example a review or comment written while offline), held until they are sent to
