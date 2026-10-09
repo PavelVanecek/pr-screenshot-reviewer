@@ -31,6 +31,10 @@ To work, the app uses the following, and it stays on your device except when sen
   loads faster and works offline.
 - **Pending actions** (for example a review or comment written while offline), held until they are sent to
   GitHub.
+- **Home screen widgets**, if you add them: they show pull request titles, authors and screenshots from the
+  cached GitHub content on your home screen, where anyone who can see your screen can see them. The pull
+  request pinned to the screenshot widget, and which screenshot each widget is showing, are stored on the
+  device.
 - **Feedback on individual screenshots**: the comments, rejections and tasks you write about a screenshot,
   with a link to the resulting GitHub comment or issue once it is sent. Kept so the app can show what you
   said about each screenshot; removed when the pull request is closed or you change repository.
@@ -49,6 +53,10 @@ the repository you are reviewing. GitHub's handling of that data is governed
 by the [GitHub Privacy Statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).
 All connections use HTTPS.
 
+The app normally contacts GitHub only while you use it. While a home screen widget is placed, it also
+refreshes from GitHub in the background about once an hour, fetching the same pull request data the app
+shows; removing all widgets stops this.
+
 ## Permissions
 
 - **Internet** and **network state** — to reach GitHub and to know when you are offline.
@@ -56,6 +64,7 @@ All connections use HTTPS.
 ## Deleting your data
 
 - **Sign out** in Settings to remove the access token from the device.
+- **Remove the widgets** from your home screen to stop background refreshes and clear what they show.
 - **Uninstall** the app, or clear its storage in Android settings, to remove all locally stored data.
 - **Revoke access** at <https://github.com/settings/applications>.
 
