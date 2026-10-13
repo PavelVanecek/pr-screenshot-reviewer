@@ -36,18 +36,21 @@ To work, the app uses the following, and it stays on your device except when sen
   one-tap selection. If you connected private repositories, it also asks GitHub which private repositories
   the GitHub App is installed on. They are only shown, not stored.
 - **Cached GitHub content**: pull request metadata, changed image files and HTTP cache tags, so the app
-  loads faster and works offline. Pull request metadata is removed when you change repository. Downloaded
-  screenshots are kept across repository changes, so returning to a repository does not download them
-  again; each is removed 30 days after it was last shown, or when you clear the image cache in Settings.
+  loads faster and works offline. It is kept when you change repository, so returning to one does not
+  download it again. What is cached for a repository is removed once you have not opened that repository
+  for 30 days. Each downloaded screenshot is removed 30 days after it was last shown, or when you clear the
+  image cache in Settings.
 - **Pending actions** (for example a review or comment written while offline), held until they are sent to
-  GitHub.
+  GitHub. One written for a repository you then switch away from is held until you switch back, and is
+  removed unsent with the rest of what is cached for that repository after 30 days.
 - **Home screen widgets**, if you add them: they show pull request titles, authors and screenshots from the
   cached GitHub content on your home screen, where anyone who can see your screen can see them. The pull
   request pinned to the screenshot widget, and which screenshot each widget is showing, are stored on the
   device.
 - **Feedback on individual screenshots**: the comments, rejections and tasks you write about a screenshot,
   with a link to the resulting GitHub comment or issue once it is sent. Kept so the app can show what you
-  said about each screenshot; removed when the pull request is closed or you change repository.
+  said about each screenshot; removed when the pull request is closed, or with the rest of what is cached
+  for its repository.
 
 The GitHub username, access tokens and the reviews, comments and issues you write are sent to GitHub only, to provide
 the app's functionality. The developer never receives them, and they are not sold or shared with anyone else.
